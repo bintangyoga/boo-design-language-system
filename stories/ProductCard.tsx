@@ -3,17 +3,8 @@ import { numberFormat } from '../components/numberFormat'
 import './productCard.css';
 
 export interface ProductCardProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  disabled?: boolean;
-  /**
-   * How large should the button be?
-   */
+  type?: 'active' | 'disabled';
   size?: 'small' | 'medium';
-  /**
-   * Button contents
-   */
   productImageUrl: string;
   productTitle: string;
   productPrice: number;
@@ -22,11 +13,8 @@ export interface ProductCardProps {
   onClick?: () => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const ProductCard = ({
-  disabled = false,
+  type = 'active',
   size = 'medium',
   productImageUrl,
   productTitle,
@@ -35,10 +23,9 @@ export const ProductCard = ({
   productDiscountPercentage,
   ...props
 }: ProductCardProps) => {
-  const mode = disabled && 'product-card--disabled';
   return (
     <div
-      className={['product-card', `product-card--${size}`, mode].join(' ')}
+      className={['product-card', `product-card--${size}`, `product-card--${type}`].join(' ')}
       {...props}
     >
       <div className='product-card__image'>
@@ -61,9 +48,9 @@ export const ProductCard = ({
         </div>
         <button
           type="button"
-          disabled={disabled ? true : false}
+          disabled={type === 'disabled'}
         >
-          {disabled ? 'Out of stock' : 'Add to bag'}
+          {type === 'disabled' ? 'Out of stock' : 'Add to bag'}
         </button>
       </div>
     </div >

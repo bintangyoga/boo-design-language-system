@@ -1,6 +1,6 @@
 {
   "name": "@bintangyoga/boo-design-language-system",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Boo Design Language System Library",
   "main": "dist/index.js",
   "scripts": {

@@ -16,7 +16,7 @@ export const Normal = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Normal.args = {
   size: 'medium',
-  disabled: false,
+  type: 'active',
   productImageUrl: 'https://i.ibb.co/pjmvRt5/NIKE.jpg',
   productTitle: 'NIKE AJ1 Retro High White University Blue Black Ultimate',
   productPrice: 3550000,
@@ -27,7 +27,7 @@ Normal.args = {
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
-  disabled: false,
+  type: 'active',
   productImageUrl: 'https://i.ibb.co/pjmvRt5/NIKE.jpg',
   productTitle: 'NIKE AJ1 Retro High White University Blue Black Ultimate',
   productPrice: 3550000,
@@ -38,7 +38,7 @@ Small.args = {
 export const Disabled = Template.bind({});
 Disabled.args = {
   size: 'medium',
-  disabled: true,
+  type: 'disabled',
   productImageUrl: 'https://i.ibb.co/pjmvRt5/NIKE.jpg',
   productTitle: 'NIKE AJ1 Retro High White University Blue Black Ultimate',
   productPrice: 3550000,

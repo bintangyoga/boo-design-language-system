@@ -85,7 +85,8 @@
   cursor: pointer;
 }
 
-.product-card__details > button:disabled {
+.product-card__details > button:disabled,
+.product-card__details > button:disabled:hover {
   background-color: #EDEDED;
   color: #828282;
   cursor: auto;
