@@ -17,8 +17,8 @@ export const Normal = Template.bind({});
 Normal.args = {
   size: 'medium',
   type: 'active',
-  productImageUrl: 'https://i.ibb.co/pjmvRt5/NIKE.jpg',
-  productTitle: 'NIKE AJ1 Retro High White University Blue Black Ultimate',
+  productImageUrl: 'https://www.mytheresa.com/media/1094/1238/100/c5/P01009037.jpg',
+  productTitle: 'Nike Air Max Dn sneakers',
   productPrice: 3550000,
   productDiscount: 1000000,
   productDiscountPercentage: 99,
@@ -28,8 +28,8 @@ export const Small = Template.bind({});
 Small.args = {
   size: 'small',
   type: 'active',
-  productImageUrl: 'https://i.ibb.co/pjmvRt5/NIKE.jpg',
-  productTitle: 'NIKE AJ1 Retro High White University Blue Black Ultimate',
+  productImageUrl: 'https://www.mytheresa.com/media/1094/1238/100/c5/P01009037.jpg',
+  productTitle: 'Nike Air Max Dn sneakers',
   productPrice: 3550000,
   productDiscount: 1000000,
   productDiscountPercentage: 99,
@@ -39,8 +39,8 @@ export const Disabled = Template.bind({});
 Disabled.args = {
   size: 'medium',
   type: 'disabled',
-  productImageUrl: 'https://i.ibb.co/pjmvRt5/NIKE.jpg',
-  productTitle: 'NIKE AJ1 Retro High White University Blue Black Ultimate',
+  productImageUrl: 'https://www.mytheresa.com/media/1094/1238/100/c5/P01009037.jpg',
+  productTitle: 'Nike Air Max Dn sneakers',
   productPrice: 3550000,
   productDiscount: 1000000,
   productDiscountPercentage: 99,

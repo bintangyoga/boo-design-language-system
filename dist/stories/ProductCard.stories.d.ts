@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 declare const _default: ComponentMeta<({ type, size, productImageUrl, productTitle, productPrice, productDiscount, productDiscountPercentage, ...props }: import("./ProductCard").ProductCardProps) => JSX.Element>;
 export default _default;
